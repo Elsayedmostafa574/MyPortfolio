@@ -440,3 +440,8 @@
   font-weight: 500;
   text-decoration: none;
 }
+@media (max-width:676px) {
+  .footer p{
+    font-size: 16px;
+  }
+}
