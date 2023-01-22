@@ -473,6 +473,11 @@
   padding: 15px 30px;
   border-radius: 30px;
 }
+@media (max-width: 676px) {
+  .contact .col-lg-3{
+    display: none;
+  }
+}
 /* Footer */
 .footer {
   padding-top: 20px;
