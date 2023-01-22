@@ -7,6 +7,54 @@
   letter-spacing: 1rem;
 }
 
+/* Start Loader Spinner */
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: all .75s;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(83, 160, 232);
+  border-color: rgb(83, 160, 232) transparent rgb(83, 160, 232) transparent;
+  animation: loader 1.2s linear infinite;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* End Loader Spinner */
+
+/* Start Button To Top */
+.btnTop{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  font-size: 20px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  padding: 8px 15px;
+  background-color: rgb(83, 160, 232);
+}
+/* End Button To Top */
 /* End Global */
 .navbar .navbar-brand {
   color: #fff;
